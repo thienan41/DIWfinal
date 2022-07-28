@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Fashion Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar container">
+        <div class="logo"><img src="image/logo.png" alt="" /></div>
+        <ul class="list active">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="product.html">Product</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+        <div class="icon">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="carousel">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/poster.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/poster1.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/poster2.jpg" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="category">
+        <ul>
+          <li class="list-category active" data-filter="All">All</li>
+          <li class="list-category" data-filter="Nike">Best Seller</li>
+          <li class="list-category" data-filter="Addidas">Hot</li>
+          <li class="list-category" data-filter="Puma">New</li>
+          <li></li>
+        </ul>
+
+        <div class="product">
+          <div class="row">
+            <!-- <div class="col-3">
+              <div class="itemBox" data-item="Nike">
+                <img src="image/aokhoac1.jpg" alt="" />
+                <div class="item-text">
+                  <h6>Green Jacket</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$10</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="itemBox" data-item="Nike">
+                <img src="image/aotaydai.jpg" alt="" />
+                <div class="item-text">
+                  <h6>Long Sleeve Shirt</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$15</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="itemBox" data-item="Nike">
+                <img src="image/t-shirt2.jpg" alt="" />
+                <div class="item-text">
+                  <h6>Bull T-Shirt</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$10</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="itemBox" data-item="Addidas">
+                <img src="image/aothung4.jpg" alt="" />
+                <div class="item-text">
+                  <h6>DeepSea T-Shirt</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$12</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="itemBox" data-item="Addidas">
+                <img src="image/t-shirt1.jpg" alt="" />
+                <div class="item-text">
+                  <h6>Avatar T-Shirt</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$20</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="itemBox" data-item="Addidas">
+                <img src="image/somi1.jpg" alt="" />
+                <div class="item-text">
+                  <h6>Short Sleeve Shirt</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$12</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="itemBox" data-item="Puma">
+                <img src="image/somi2.jpg" alt="" />
+                <div class="item-text">
+                  <h6>Short Sleeve Shirt Flower</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$350</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="itemBox" data-item="Puma">
+                <img src="image/shoe.jpg" alt="" />
+                <div class="item-text">
+                  <h6>Nike air force 1</h6>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <div class="add">
+                    <h5>$350</h5>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-container container">
+      <div class="news-text">
+        <span class="news-span">LATSET NEWS</span>
+        <h2 class="news-header">Fashion New Trends</h2>
+      </div>
+
+      <div class="news">
+        <div class="news-content">
+          <div class="news-content-img">
+            <img src="image/poster1.jpg" alt="" />
+          </div>
+          <div class="news-content-info">
+            <span> <i class="fa-solid fa-calendar"></i> 16 February 2020</span>
+            <h5>What Curling Irons Are The Best Ones</h5>
+            <a href="#">READ MORE</a>
+          </div>
+        </div>
+        <div class="news-content">
+          <div class="news-content-img">
+            <img src="image/poster1.jpg" alt="" />
+          </div>
+          <div class="news-content-info">
+            <span> <i class="fa-solid fa-calendar"></i> 16 February 2020</span>
+            <h5>What Curling Irons Are The Best Ones</h5>
+            <a href="#">READ MORE</a>
+          </div>
+        </div>
+        <div class="news-content">
+          <div class="news-content-img">
+            <img src="image/poster1.jpg" alt="" />
+          </div>
+          <div class="news-content-info">
+            <span> <i class="fa-solid fa-calendar"></i> 16 February 2020</span>
+            <h5>What Curling Irons Are The Best Ones</h5>
+            <a href="#">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-f">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+      </div>
+      <p>Copyright © 2022 An Thien</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/home.js"></script>
+  </body>
+</html>
